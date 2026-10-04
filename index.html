@@ -1,14 +1,529 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Maki Andrich | Cybersecurity</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Maki Andrich</h1>
-    <h2>Cybersecurity & Information Security</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p>Cybersecurity student focused on penetration testing,
-       security engineering, and red teaming.</p>
-</body>
-</html>
+    <title>Maki Andrich | Cybersecurity</title>
+
+    <meta name="description"
+          content="Maki Andrich - Cybersecurity student focused on penetration testing, security engineering, and information security.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #070b12;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        /* ---------- Navigation ---------- */
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(7, 11, 18, 0.85);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 18px 25px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo span {
+            color: #39ff88;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #aab4c3;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #39ff88;
+        }
+
+        /* ---------- Hero ---------- */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+
+            padding: 120px 25px 80px;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+            width: 600px;
+            height: 600px;
+
+            background: radial-gradient(
+                circle,
+                rgba(57, 255, 136, 0.12),
+                transparent 70%
+            );
+
+            top: -200px;
+            right: -150px;
+        }
+
+        .hero-container {
+            max-width: 1150px;
+            width: 100%;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .terminal {
+            color: #39ff88;
+            font-family: monospace;
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 8vw, 88px);
+            line-height: 1;
+            margin-bottom: 25px;
+            letter-spacing: -3px;
+        }
+
+        .hero h1 span {
+            color: #39ff88;
+        }
+
+        .hero-subtitle {
+            max-width: 650px;
+            font-size: 20px;
+            color: #9ba7b6;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+
+            border-radius: 7px;
+
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+
+            transition: 0.2s;
+        }
+
+        .button-primary {
+            background: #39ff88;
+            color: #06100a;
+        }
+
+        .button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(57, 255, 136, 0.25);
+        }
+
+        .button-secondary {
+            border: 1px solid #293442;
+            color: #d8e0e8;
+            background: #0c121b;
+        }
+
+        .button-secondary:hover {
+            border-color: #39ff88;
+            color: #39ff88;
+        }
+
+        /* ---------- Sections ---------- */
+
+        section {
+            max-width: 1150px;
+            margin: auto;
+            padding: 100px 25px;
+        }
+
+        .section-label {
+            color: #39ff88;
+            font-family: monospace;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 38px;
+            margin-bottom: 45px;
+        }
+
+        /* ---------- About ---------- */
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: #9ba7b6;
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        .about-box {
+            border: 1px solid #1d2733;
+            background: #0b1119;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .about-box h3 {
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 0;
+            border-bottom: 1px solid #1b2530;
+            color: #aab4c3;
+        }
+
+        .stat:last-child {
+            border-bottom: none;
+        }
+
+        .stat strong {
+            color: #ffffff;
+        }
+
+        /* ---------- Skills ---------- */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 8px 13px;
+            border-radius: 6px;
+
+            background: #0d151f;
+            border: 1px solid #1e2b38;
+
+            color: #b7c2ce;
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .skill:hover {
+            border-color: #39ff88;
+            color: #39ff88;
+        }
+
+        /* ---------- Projects ---------- */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background: #0b1119;
+            border: 1px solid #1d2733;
+            border-radius: 12px;
+            padding: 25px;
+
+            transition: 0.25s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #39ff88;
+        }
+
+        .project-number {
+            color: #39ff88;
+            font-family: monospace;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .project p {
+            color: #8f9baa;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .project-tag {
+            font-size: 11px;
+            color: #39ff88;
+            background: rgba(57, 255, 136, 0.07);
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+
+        /* ---------- Certifications ---------- */
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .cert {
+            padding: 22px;
+
+            border: 1px solid #1d2733;
+            background: #0b1119;
+
+            border-radius: 10px;
+        }
+
+        .cert-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .cert-subtitle {
+            color: #8f9baa;
+            font-size: 13px;
+        }
+
+        /* ---------- Contact ---------- */
+
+        .contact {
+            text-align: center;
+            max-width: 750px;
+        }
+
+        .contact p {
+            color: #8f9baa;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* ---------- Footer ---------- */
+
+        footer {
+            border-top: 1px solid #151e28;
+            padding: 30px 25px;
+
+            text-align: center;
+
+            color: #687585;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: #39ff88;
+        }
+
+        /* ---------- Mobile ---------- */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .certifications {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            Maki<span>.</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- Hero -->
+
+<header class="hero">
+
+    <div class="hero-container">
+
+        <div class="terminal">
+            $ whoami
+        </div>
+
+        <h1>
+            Maki<br>
+            <span>Andrich</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Cybersecurity student focused on penetration testing,
+            security engineering, and offensive security.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="button button-primary">
+                View My Work
+            </a>
+
+            <a href="#contact" class="button button-secondary">
+                Get In Touch
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- About -->
+
+<section id="about">
+
+    <div class="section-label">
+        01 // ABOUT
+    </div>
+
+    <h2 class="section-title">
+        About Me
+    </h2>
+
+    <div class="about">
+
+        <div class="about-text">
+
+            <p>
+                I'm a Computer Science student specializing in Information
+                Security with a strong interest in offensive security,
+                penetration testing, and security engineering.
+            </p>
+
+            <p>
+                I enjoy breaking down how systems work, finding weaknesses,
+                and building practical security solutions. Most of my
+                learning happens through hands-on labs, homelabs, CTFs,
+                and real-world IT and security projects.
+            </p>
+
+            <p>
+                I'm currently building my skills across penetration testing,
+                network security, cloud security, SIEM, endpoint security,
+                and security operations.
+            </p>
+
+        </div>
+
+        <div class="about-box">
+
+            <h3>Quick Facts</h3>
+
+            <div class="stat">
+                <span>Focus</span>
+                <strong>Cybersecurity</strong>
+            </div>
+
+            <div class="stat">
+                <span>Specialization</span>
+                <strong>Information Security</strong>
+            </div>
+
+            <div class="stat">
+                <span>Interests</span>
+                <strong>Red Team / Pentesting</strong>
+```
