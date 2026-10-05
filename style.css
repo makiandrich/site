@@ -14,5 +14,12 @@ body{
         text-transform: uppercase;
         font-family: Arial, sans-serif;
         text-align: center;
-}
 
+        display: block;
+        padding: 15px 25px;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 8px;
+}
