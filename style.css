@@ -1,26 +1,31 @@
-body{
-        background-color: #3B3B3B;
-        font-size: 40px;
-        font-weight: bold;
-        color: #4CAF50;
-        text-transform: uppercase;
-        font-family: Arial, sans-serif;
+body {
+    background-color: #3B3B3B;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
 }
-.nav_bar{
-        background-color: #222222;
-        font-size: 20px;
-        font-weight: bold;
-        color: #4CAF50;
-        text-transform: uppercase;
-        font-family: Arial, sans-serif;
-        text-align: center;
 
-        display: flex;
-        gap: 20px;
-        display: block;
-        padding: 15px 25px;
-        border: 2px solid black;
-        text-decoration: none;
-        background-color: white;
-        border-radius: 8px;
+.nav_bar {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.nav_bar a {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    text-decoration: none;
+    color: #4CAF50;
+    background-color: #222222;
+    border-radius: 8px;
+}
+
+.nav_bar a:hover {
+    background-color: #4CAF50;
+    color: #222222;
 }
