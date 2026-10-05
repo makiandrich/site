@@ -6,5 +6,12 @@ body{
         text-transform: uppercase;
         font-family: Arial, sans-serif;
 }
-
+.nav_bar{
+        font-size: 20px;
+        font-weight: bold;
+        color: #4CAF50;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        text-align: center;
+}
 
