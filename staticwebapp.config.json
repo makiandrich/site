@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "route": "/AboutMe",
+      "rewrite": "/AboutMe.html"
+    }
+  ]
+}
