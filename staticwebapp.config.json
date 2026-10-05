@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/AboutMe",
-      "rewrite": "/AboutMe.html"
+      "rewrite": "/aboutme.html"
     }
   ]
 }
