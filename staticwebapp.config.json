@@ -3,14 +3,18 @@
     {
       "route": "/AboutMe",
       "rewrite": "/aboutme.html"
-    }
+    },
     {
       "route": "/Contact",
       "rewrite": "/contact.html"
-    }
-     {
+    },
+    {
       "route": "/Certifications",
       "rewrite": "/certifications.html"
+    },
+    {
+      "route": "/AttackNarratives",
+      "rewrite": "/attacknarratives.html"
     }
   ]
 }
