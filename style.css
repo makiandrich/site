@@ -29,7 +29,12 @@ body {
     color: #222222;
 }
 
-
+.pics{
+     width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 /* Mobile / iPhone */
@@ -53,12 +58,17 @@ body {
         font-size: 14px;
         padding: 8px 12px;
     }
-
+    
     h2 {
         font-size: 28px;
     }
 
     p {
         font-size: 18px;
+    }
+
+    .pics{
+        width: 180px;
+        height: 180px;
     }
 }
