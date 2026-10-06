@@ -35,7 +35,16 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
+.resume-viewer {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
 
+.resume-viewer object {
+    width: 50%;
+    height: 1500px;
+}
 
 /* Mobile / iPhone */
 @media (max-width: 600px) {
