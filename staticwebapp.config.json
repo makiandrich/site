@@ -4,5 +4,9 @@
       "route": "/AboutMe",
       "rewrite": "/aboutme.html"
     }
+    {
+      "route": "/Contact",
+      "rewrite": "/contact.html"
+    }
   ]
 }
