@@ -8,5 +8,9 @@
       "route": "/Contact",
       "rewrite": "/contact.html"
     }
+     {
+      "route": "/Certifications",
+      "rewrite": "/certifications.html"
+    }
   ]
 }
