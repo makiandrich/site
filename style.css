@@ -29,3 +29,37 @@ body {
     background-color: #4CAF50;
     color: #222222;
 }
+
+
+
+
+/* Mobile / iPhone */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 20px;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .nav_bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .nav_bar a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
