@@ -5,7 +5,9 @@ body {
     color: #4CAF50;
     font-family: Arial, sans-serif;
 }
-
+.indextext{
+    font-size: 25px;
+}
 .nav_bar {
     background-color: #222222;
     display: flex;
