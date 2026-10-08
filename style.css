@@ -59,6 +59,10 @@ p {
 .mylink {
     color: #0026FF;
 }
+mark {
+    background-color: #4CAF50;
+    color: #222222;
+}
 /* Mobile / iPhone */
 @media (max-width: 600px) {
 
