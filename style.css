@@ -107,6 +107,9 @@ mark {
         margin: 0;
         padding: 0 15px;
     }
+    .aboutmetext{
+     font-size: 15px;
+    }
 
     .nav_bar {
         display: flex;
