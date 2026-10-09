@@ -9,6 +9,9 @@ p {
     font-size: 55px;
     text-align: center;
 }
+.aboutmetext{
+     font-size: 35px;
+}
 .nav_bar {
     background-color: #222222;
     display: flex;
