@@ -9,8 +9,8 @@
       "rewrite": "/contact.html"
     },
     {
-      "route": "/Certifications",
-      "rewrite": "/certifications.html"
+      "route": "/Education",
+      "rewrite": "/education.html"
     },
     {
       "route": "/AttackNarratives",
