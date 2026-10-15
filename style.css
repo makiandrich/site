@@ -9,7 +9,7 @@ p {
     font-size: 55px;
     text-align: center;
 }
-.aboutmetext{
+.normaltext{
      font-size: 35px;
 }
 .nav_bar {
@@ -217,7 +217,7 @@ mark {
         margin: 0;
         padding: 0 15px;
     }
-    .aboutmetext{
+    .normaltext{
      font-size: 15px;
     }
 
