@@ -47,6 +47,12 @@ p {
     display: block;
     margin: 0 auto;
 }
+.edpics {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .resume-viewer {
     width: 100%;
     margin: 40px auto;
@@ -139,6 +145,12 @@ mark {
     .notmepics {
      width: 180px;
     height: 180px;
+    }
+    .edpics {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     }
 
     .resume-viewer {
