@@ -105,6 +105,110 @@ mark {
 }
 
 
+
+/* TryHackMe writeup table */
+.thm-section {
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+.thm-section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.thm-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4CAF50;
+}
+
+.thm-table th,
+.thm-table td {
+    padding: 16px;
+    border: 1px solid #555;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.thm-table th {
+    background-color: #222;
+    font-weight: bold;
+}
+
+.thm-table td {
+    background-color: #303030;
+}
+
+.thm-table a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.thm-table a:hover {
+    color: white;
+}
+
+/* iPhone and other small screens */
+@media (max-width: 600px) {
+    .thm-section {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    .thm-section h2 {
+        font-size: 24px;
+    }
+
+    .thm-table,
+    .thm-table tbody,
+    .thm-table tr,
+    .thm-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .thm-table thead {
+        display: none;
+    }
+
+    .thm-table tr {
+        margin-bottom: 18px;
+        border: 1px solid #555;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .thm-table td {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 10px;
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid #555;
+        font-size: 15px;
+    }
+
+    .thm-table td:last-child {
+        border-bottom: none;
+    }
+
+    .thm-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: white;
+    }
+}
+
+
+
 /* Mobile / iPhone */
 @media (max-width: 600px) {
 
